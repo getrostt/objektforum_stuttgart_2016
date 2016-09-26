@@ -1,4 +1,4 @@
-# Obejktforum Stuttgart / Java User Group Stuttgart 2016: Continuous Delivery mit Jenkins Pipeline
+# Objektforum Stuttgart / Java User Group Stuttgart 2016: Continuous Delivery mit Jenkins Pipeline
 Example Code from my presentation at the Obejktforum Stuttgart 2016
 
 ## Local setup (linux)
