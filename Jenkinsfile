@@ -24,7 +24,7 @@ stage('Commit') {
         dir('kitchensink') {
           // run maven build
           // -Dmaven.test.failure.ignore=true -> do not fail the maven build due to test errors
-                                              -> this will be done by the junit step (causing the build to become yellow)
+          //                                  -> this will be done by the junit step (causing the build to become yellow)
           sh "${mvnHome}/bin/mvn clean install -Dmaven.test.failure.ignore=true"
 
           // publish JUnit test results
