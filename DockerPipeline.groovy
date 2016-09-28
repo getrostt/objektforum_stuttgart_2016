@@ -5,7 +5,7 @@ stage('Commit') {
     node {
         def img = docker.image(mvnImgDocker)
         img.pull()
-        docker.inside {
+        img.inside {
             git url: gitUrl, branch: '10.x'
 
             dir('kitchensink') {
