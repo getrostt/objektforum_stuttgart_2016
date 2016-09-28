@@ -8,9 +8,7 @@ stage('Commit') {
         img.inside {
             git url: gitUrl, branch: '10.x'
 
-            dir('kitchensink') {
-              sh "mvn clean install"
-            }
+            sh "cd kitchensink && mvn clean install"
         }
     }
 }
